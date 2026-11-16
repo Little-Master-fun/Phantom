@@ -1,0 +1,61 @@
+% CVPR 2027 Paper Template; see https://github.com/cvpr-org/author-kit
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+% \usepackage{cvpr}              % To produce the CAMERA-READY version
+\usepackage[review]{cvpr}      % To produce the REVIEW version
+% \usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+
+% Import additional packages in the preamble file, before hyperref
+\input{preamble}
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, 
+% e.g. with the file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete *.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you should be clear).
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+\def\confName{CVPR}
+\def\confYear{2027}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{PHANTOM: Erasing Transparent Objects While Keeping What Lies Behind\\for Model-Agnostic Two-Layer 3D Reconstruction}
+
+%%%%%%%%% AUTHORS - PLEASE UPDATE
+% TODO: add affiliations (hidden in the review version).
+\author{Jiaqi Li\\
+{\tt\small 202300450146@mail.sdu.edu.cn}
+\and
+Wei Shi\\
+{\tt\small 202333180046@mail.sdu.edu.cn}
+}
+
+\begin{document}
+\maketitle
+\input{fig/teaser}
+\input{sec/0_abstract}    
+\input{sec/1_intro}
+% Queue the two-column overview on page 2 so it appears at the top of page 3.
+\input{fig/method}
+\input{sec/2_related}
+\input{sec/3_method}
+\input{sec/4_experiments}
+\input{sec/5_conclusion}
+% Author-kit instructions are retained as source files, outside the paper body.
+% \input{sec/2_formatting}
+% \input{sec/3_finalcopy}
+{
+    \small
+    \bibliographystyle{ieeenat_fullname}
+    \bibliography{main}
+}
+
+% WARNING: do not forget to delete the supplementary pages from your submission 
+% \input{sec/X_suppl}
+
+\end{document}

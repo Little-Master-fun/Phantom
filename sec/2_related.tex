@@ -1,0 +1,24 @@
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Feed-Forward 3D Reconstruction}
+Classical structure-from-motion and multi-view stereo recover cameras and scene structure through matching, triangulation and optimization~\cite{colmap,mvs}, and MVSNet learns the cost-volume regularization~\cite{mvsnet}.
+DUSt3R and MASt3R regress point maps from image pairs~\cite{dust3r,mast3r}, and VGGT and $\pi^3$ extend this to image collections~\cite{vggt,pi3}.
+Monocular models trained at scale, from MiDaS and DPT~\cite{midas,dpt} to Depth Anything~\cite{depthanything,dav2,da3} and MoGe~\cite{moge,moge2,moge3}, often built on pretrained features such as DINOv2~\cite{dinov2}, give strong geometry priors for opaque scenes.
+All of them predict one depth per pixel and do not separate a transparent front surface from the scene behind it.
+Phantom keeps these models frozen and changes only their input.
+
+\subsection{Transparent Scene Reconstruction}
+Most work on transparent objects recovers the front surface.
+ClearGrasp combines predicted normals and occlusion boundaries with depth optimization~\cite{cleargrasp}, while TransCG with DFNet~\cite{transcg}, local implicit functions~\cite{lidf} and temporally consistent prediction~\cite{consistentdepth} complete sensor depth.
+Other work estimates keypoints and pose~\cite{keypose,clearpose}, or segments transparent regions from boundary cues~\cite{trans10k} or polarization~\cite{polarseg}.
+Physically based methods model refraction to reconstruct object shape~\cite{lookingglass,neto}, and TOM-Net estimates refractive flow for environment matting~\cite{tomnet}.
+Closest to ours, GHOST renders the object opaque so that off-the-shelf geometry models perceive its surface without retraining~\cite{ghost}.
+Phantom uses the same image-domain idea for the surface, adds a second front-end that restores the background, and aligns the two predictions.
+
+\subsection{Layered Representations and Inpainting}
+Layered depth images store several depth and color samples per pixel~\cite{ldi}, multiplane images support view synthesis~\cite{stereomag,mpi}, and layered depth inpainting fills in content behind occluders for 3D photography~\cite{photo3d}.
+NeRFReN separates transmitted and reflected radiance fields~\cite{nerfren}, and radiance-field and Gaussian representations~\cite{nerf,gs3d,pixelsplat,mvsplat} target novel-view rendering rather than per-layer geometry.
+These works motivate keeping the hidden layer but do not model refraction.
+Image inpainting~\cite{partialconv,contextual,gatedconv,lama,mat} can remove the object, but it fills the region with plausible content instead of keeping what is seen through the glass.
+Phantom therefore uses LaMa only as a prior that its background front-end can override per pixel.

@@ -1,0 +1,29 @@
+\section{Introduction}
+\label{sec:intro}
+
+Feed-forward 3D reconstruction predicts geometry directly from one or a few images and avoids the per-scene optimization of classical pipelines~\cite{colmap,mvs}.
+Models such as DUSt3R, VGGT and $\pi^3$~\cite{dust3r,vggt,pi3} have made this practical for opaque scenes, but the success does not carry over to transparent objects.
+Facing a glass, they cannot tell its front surface from the background seen through it and predict a depth that mixes the two.
+
+Transparent objects are difficult for two reasons.
+Refraction and view-dependent reflections break the link between image texture and physical surfaces, which complicates depth estimation and cross-view matching~\cite{cleargrasp,lookingglass,neto}.
+In addition, a pixel inside a transparent region observes two surfaces, the object and the scene behind it, while a depth map stores one value per pixel.
+Better surface depth alone therefore cannot recover the background, and a layered representation is needed~\cite{ldi,photo3d}.
+
+Existing methods recover a single layer.
+ClearGrasp and TransCG complete the depth of the transparent surface from RGB and sensor depth~\cite{cleargrasp,transcg}, and GHOST renders the object opaque so that off-the-shelf geometry models perceive its surface without retraining~\cite{ghost}.
+Image inpainting~\cite{partialconv,lama,mat} removes the object instead, but it replaces what is visible through the glass with plausible content.
+Recovering both layers requires an image for each layer and a way to bring their two geometry predictions into one frame.
+
+We propose \textbf{Phantom}, a layered reconstruction framework for frozen geometry backbones.
+Given a transparent-object mask predicted by TransDINO~\cite{ghost}, two image front-ends translate the input into images that a backbone already handles well: a background front-end removes the transparent objects while keeping what is seen through them, and a surface front-end renders them opaque.
+The backbone predicts geometry from each image without fine-tuning, and the two predictions are aligned on the pixels outside the mask and merged into a layered point cloud.
+The same front-ends work with VGGT~\cite{vggt}, $\pi^3$~\cite{pi3}, Depth Anything V2 Metric~\cite{dav2}, Depth Anything 3~\cite{da3}, MoGe-2~\cite{moge2} and MoGe-3~\cite{moge3}.
+On synthetic scenes they lower the error of both layers on all six backbones, and on real ClearGrasp images they lower the front-surface error more than GHOST.
+
+Our contributions are:
+\begin{itemize}
+    \item Phantom, a layered reconstruction framework that recovers the transparent front surface and the scene behind it with two image front-ends and a frozen geometry backbone.
+    \item One pair of front-ends that works with six frozen backbones without fine-tuning, improving both layers on synthetic data and the front surface on real images.
+    \item A multi-view synthetic dataset with camera-aligned ground truth for both the background and the transparent surface, which we will release.
+\end{itemize}

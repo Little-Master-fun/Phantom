@@ -1,0 +1,9 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented Phantom, which recovers the front surface of transparent objects and the scene behind them with a frozen geometry backbone.
+Two image front-ends, one restoring the background and one rendering the object opaque, are trained once on synthetic data and used with six backbones without fine-tuning; the two predictions are aligned outside the mask and merged into a layered point cloud.
+On synthetic scenes both layers improve on all six backbones, and on real ClearGrasp images the front-surface error is lower than with GHOST.
+Phantom depends on the TransDINO mask and degrades when the mask misses part of the object.
+The hidden background is evaluated on synthetic data only, so a real benchmark with ground truth for both layers is an important next step.
+We will release the code, the trained front-ends and the synthetic dataset.

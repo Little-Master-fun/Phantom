@@ -1,0 +1,344 @@
+\begin{thebibliography}{47}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cai et~al.(2023)Cai, Zhu, Zhang, and Ren]{consistentdepth}
+Yuxiang Cai, Yifan Zhu, Haiwei Zhang, and Bo Ren.
+\newblock {Consistent Depth Prediction for Transparent Object Reconstruction
+  from RGB-D Camera}.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV)}, pages 3459--3468, 2023.
+
+\bibitem[Charatan et~al.(2024)Charatan, Li, Tagliasacchi, and
+  Sitzmann]{pixelsplat}
+David Charatan, Sizhe~Lester Li, Andrea Tagliasacchi, and Vincent Sitzmann.
+\newblock {pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable
+  Generalizable 3D Reconstruction}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 19457--19467, 2024.
+
+\bibitem[Chen et~al.(2018)Chen, Han, and Wong]{tomnet}
+Guanying Chen, Kai Han, and Kwan-Yee~K. Wong.
+\newblock {TOM-Net: Learning Transparent Object Matting From a Single Image}.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2018.
+
+\bibitem[Chen et~al.(2022)Chen, Zhang, Yu, Opipari, and Jenkins]{clearpose}
+Xiaotong Chen, Huijie Zhang, Zeren Yu, Anthony Opipari, and Odest~Chadwicke
+  Jenkins.
+\newblock {ClearPose: Large-scale Transparent Object Dataset and Benchmark}.
+\newblock In \emph{European Conference on Computer Vision (ECCV)}, 2022.
+
+\bibitem[Chen et~al.(2024)Chen, Xu, Zheng, Zhuang, Pollefeys, Geiger, Cham, and
+  Cai]{mvsplat}
+Yuedong Chen, Haofei Xu, Chuanxia Zheng, Bohan Zhuang, Marc Pollefeys, Andreas
+  Geiger, Tat-Jen Cham, and Jianfei Cai.
+\newblock {MVSplat: Efficient 3D Gaussian Splatting from Sparse Multi-View
+  Images}.
+\newblock In \emph{Computer Vision -- ECCV 2024}, pages 370--386, 2024.
+
+\bibitem[Fang et~al.(2022)Fang, Fang, Xu, and Lu]{transcg}
+Hongjie Fang, Hao-Shu Fang, Sheng Xu, and Cewu Lu.
+\newblock {TransCG: A Large-Scale Real-World Dataset for Transparent Object
+  Depth Completion and a Grasping Baseline}.
+\newblock \emph{IEEE Robotics and Automation Letters}, 2022.
+
+\bibitem[Fischler and Bolles(1981)]{ransac}
+Martin~A. Fischler and Robert~C. Bolles.
+\newblock {Random sample consensus: a paradigm for model fitting with
+  applications to image analysis and automated cartography}.
+\newblock \emph{Communications of the ACM}, 24\penalty0 (6):\penalty0 381--395,
+  1981.
+
+\bibitem[Guo et~al.(2022)Guo, Kang, Bao, He, and Zhang]{nerfren}
+Yuan-Chen Guo, Di Kang, Linchao Bao, Yu He, and Song-Hai Zhang.
+\newblock {NeRFReN: Neural Radiance Fields With Reflections}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 18409--18418, 2022.
+
+\bibitem[Kalra et~al.(2020)Kalra, Taamazyan, Rao, Venkataraman, Raskar, and
+  Kadambi]{polarseg}
+Agastya Kalra, Vage Taamazyan, Supreeth~Krishna Rao, Kartik Venkataraman,
+  Ramesh Raskar, and Achuta Kadambi.
+\newblock {Deep Polarization Cues for Transparent Object Segmentation}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2020.
+
+\bibitem[Kerbl et~al.(2023)Kerbl, Kopanas, Leimkuehler, and Drettakis]{gs3d}
+Bernhard Kerbl, Georgios Kopanas, Thomas Leimkuehler, and George Drettakis.
+\newblock {3D Gaussian Splatting for Real-Time Radiance Field Rendering}.
+\newblock \emph{ACM Transactions on Graphics}, 42\penalty0 (4):\penalty0 1--14,
+  2023.
+
+\bibitem[Kong et~al.(2026)Kong, Li, Wang, Xu, Yao, Xiang, and Yang]{moge3}
+Lingyu Kong, Ruicheng Li, Ruicheng Wang, Sicheng Xu, Chengtang Yao, Jianfeng
+  Xiang, and Jiaolong Yang.
+\newblock {MoGe-3: Fine-Detail Monocular Geometry Estimation with Self-Guided
+  Sparse Volumetric Refinement}.
+\newblock \emph{arXiv preprint arXiv:2607.17967}, 2026.
+
+\bibitem[Leroy et~al.(2024)Leroy, Cabon, and Revaud]{mast3r}
+Vincent Leroy, Yohann Cabon, and Jérôme Revaud.
+\newblock {Grounding Image Matching in 3D with MASt3R}.
+\newblock In \emph{European Conference on Computer Vision (ECCV)}, 2024.
+
+\bibitem[Li et~al.(2022)Li, Lin, Zhou, Qi, Wang, and Jia]{mat}
+Wenbo Li, Zhe Lin, Kun Zhou, Lu Qi, Yi Wang, and Jiaya Jia.
+\newblock {MAT: Mask-Aware Transformer for Large Hole Image Inpainting}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 10758--10768, 2022.
+
+\bibitem[Li et~al.(2020)Li, Yeh, and Chandraker]{lookingglass}
+Zhengqin Li, Yu-Ying Yeh, and Manmohan Chandraker.
+\newblock {Through the Looking Glass: Neural 3D Reconstruction of Transparent
+  Shapes}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2020.
+
+\bibitem[Li et~al.(2023)Li, Long, Wang, Cao, Wang, Luo, and Xiao]{neto}
+Zongcheng Li, Xiaoxiao Long, Yusen Wang, Tuo Cao, Wenping Wang, Fei Luo, and
+  Chunxia Xiao.
+\newblock {NeTO:Neural Reconstruction of Transparent Objects with
+  Self-Occlusion Aware Refraction-Tracing}.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV)}, pages 18547--18557, 2023.
+
+\bibitem[Lin et~al.(2025)Lin, Chen, Liew, Chen, Li, Shi, Feng, and Kang]{da3}
+Haotong Lin, Sili Chen, Junhao Liew, Donny~Y. Chen, Zhenyu Li, Guang Shi,
+  Jiashi Feng, and Bingyi Kang.
+\newblock {Depth Anything 3: Recovering the Visual Space from Any Views}.
+\newblock \emph{arXiv preprint arXiv:2511.10647}, 2025.
+
+\bibitem[Liu et~al.(2018)Liu, Reda, Shih, Wang, Tao, and
+  Catanzaro]{partialconv}
+Guilin Liu, Fitsum~A. Reda, Kevin~J. Shih, Ting-Chun Wang, Andrew Tao, and
+  Bryan Catanzaro.
+\newblock {Image Inpainting for Irregular Holes Using Partial Convolutions}.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision
+  (ECCV)}, 2018.
+
+\bibitem[Liu et~al.(2020)Liu, Jonschkowski, Angelova, and Konolige]{keypose}
+Xingyu Liu, Rico Jonschkowski, Anelia Angelova, and Kurt Konolige.
+\newblock {KeyPose: Multi-View 3D Labeling and Keypoint Estimation for
+  Transparent Objects}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2020.
+
+\bibitem[Loshchilov and Hutter(2019)]{adamw}
+Ilya Loshchilov and Frank Hutter.
+\newblock {Decoupled Weight Decay Regularization}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2019.
+
+\bibitem[Mildenhall et~al.(2020)Mildenhall, Srinivasan, Tancik, Barron,
+  Ramamoorthi, and Ng]{nerf}
+Ben Mildenhall, Pratul~P. Srinivasan, Matthew Tancik, Jonathan~T. Barron, Ravi
+  Ramamoorthi, and Ren Ng.
+\newblock {NeRF: Representing Scenes as Neural Radiance Fields for View
+  Synthesis}.
+\newblock In \emph{European Conference on Computer Vision (ECCV)}, 2020.
+
+\bibitem[Oquab et~al.(2023)Oquab, Darcet, Moutakanni, Vo, Szafraniec, Khalidov,
+  Fernandez, Haziza, Massa, El-Nouby, Assran, Ballas, Galuba, Howes, Huang, Li,
+  Misra, Rabbat, Sharma, Synnaeve, Xu, Jegou, Mairal, Labatut, Joulin, and
+  Bojanowski]{dinov2}
+Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy Vo, Marc Szafraniec,
+  Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin
+  El-Nouby, Mahmoud Assran, Nicolas Ballas, Wojciech Galuba, Russell Howes,
+  Po-Yao Huang, Shang-Wen Li, Ishan Misra, Michael Rabbat, Vasu Sharma, Gabriel
+  Synnaeve, Hu Xu, Hervé Jegou, Julien Mairal, Patrick Labatut, Armand Joulin,
+  and Piotr Bojanowski.
+\newblock {DINOv2: Learning Robust Visual Features without Supervision}.
+\newblock \emph{arXiv preprint arXiv:2304.07193}, 2023.
+
+\bibitem[Ranftl et~al.(2021)Ranftl, Bochkovskiy, and Koltun]{dpt}
+Ren\'e Ranftl, Alexey Bochkovskiy, and Vladlen Koltun.
+\newblock {Vision Transformers for Dense Prediction}.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV)}, pages 12179--12188, 2021.
+
+\bibitem[Ranftl et~al.(2022)Ranftl, Lasinger, Hafner, Schindler, and
+  Koltun]{midas}
+Rene Ranftl, Katrin Lasinger, David Hafner, Konrad Schindler, and Vladlen
+  Koltun.
+\newblock {Towards Robust Monocular Depth Estimation: Mixing Datasets for
+  Zero-shot Cross-dataset Transfer}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 44\penalty0 (3):\penalty0 1623--1637, 2022.
+
+\bibitem[Sajjan et~al.(2020)Sajjan, Moore, Pan, Nagaraja, Lee, Zeng, and
+  Song]{cleargrasp}
+Shreeyak Sajjan, Matthew Moore, Mike Pan, Ganesh Nagaraja, Johnny Lee, Andy
+  Zeng, and Shuran Song.
+\newblock {ClearGrasp: 3D Shape Estimation of Transparent Objects for
+  Manipulation}.
+\newblock In \emph{2020 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 3634--3642, 2020.
+
+\bibitem[Schonberger and Frahm(2016)]{colmap}
+Johannes~L. Schonberger and Jan-Michael Frahm.
+\newblock {Structure-From-Motion Revisited}.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2016.
+
+\bibitem[Schönberger et~al.(2016)Schönberger, Zheng, Frahm, and
+  Pollefeys]{mvs}
+Johannes~L. Schönberger, Enliang Zheng, Jan-Michael Frahm, and Marc Pollefeys.
+\newblock {Pixelwise View Selection for Unstructured Multi-View Stereo}.
+\newblock In \emph{Computer Vision -- ECCV 2016}, pages 501--518, 2016.
+
+\bibitem[Shade et~al.(1998)Shade, Gortler, He, and Szeliski]{ldi}
+Jonathan Shade, Steven Gortler, Li-wei He, and Richard Szeliski.
+\newblock {Layered depth images}.
+\newblock In \emph{Proceedings of the 25th annual conference on Computer
+  graphics and interactive techniques - SIGGRAPH '98}, pages 231--242, 1998.
+
+\bibitem[Shih et~al.(2020)Shih, Su, Kopf, and Huang]{photo3d}
+Meng-Li Shih, Shih-Yang Su, Johannes Kopf, and Jia-Bin Huang.
+\newblock {3D Photography Using Context-Aware Layered Depth Inpainting}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2020.
+
+\bibitem[Siméoni et~al.(2025)Siméoni, Vo, Seitzer, Baldassarre, Oquab, Jose,
+  Khalidov, Szafraniec, Yi, Ramamonjisoa, Massa, Haziza, Wehrstedt, Wang,
+  Darcet, Moutakanni, Sentana, Roberts, Vedaldi, Tolan, Brandt, Couprie,
+  Mairal, Jégou, Labatut, and Bojanowski]{dinov3}
+Oriane Siméoni, Huy~V. Vo, Maximilian Seitzer, Federico Baldassarre, Maxime
+  Oquab, Cijo Jose, Vasil Khalidov, Marc Szafraniec, Seungeun Yi, Michaël
+  Ramamonjisoa, Francisco Massa, Daniel Haziza, Luca Wehrstedt, Jianyuan Wang,
+  Timothée Darcet, Théo Moutakanni, Leonel Sentana, Claire Roberts, Andrea
+  Vedaldi, Jamie Tolan, John Brandt, Camille Couprie, Julien Mairal, Hervé
+  Jégou, Patrick Labatut, and Piotr Bojanowski.
+\newblock {DINOv3}.
+\newblock \emph{arXiv preprint arXiv:2508.10104}, 2025.
+
+\bibitem[Suvorov et~al.(2022)Suvorov, Logacheva, Mashikhin, Remizova, Ashukha,
+  Silvestrov, Kong, Goka, Park, and Lempitsky]{lama}
+Roman Suvorov, Elizaveta Logacheva, Anton Mashikhin, Anastasia Remizova,
+  Arsenii Ashukha, Aleksei Silvestrov, Naejin Kong, Harshith Goka, Kiwoong
+  Park, and Victor Lempitsky.
+\newblock {Resolution-robust Large Mask Inpainting with Fourier Convolutions}.
+\newblock In \emph{Proceedings of the IEEE/CVF Winter Conference on
+  Applications of Computer Vision (WACV)}, 2022.
+
+\bibitem[Tucker and Snavely(2020)]{mpi}
+Richard Tucker and Noah Snavely.
+\newblock {Single-View View Synthesis With Multiplane Images}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2020.
+
+\bibitem[Umeyama(1991)]{umeyama}
+S. Umeyama.
+\newblock {Least-squares estimation of transformation parameters between two
+  point patterns}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 13\penalty0 (4):\penalty0 376--380, 1991.
+
+\bibitem[Wang et~al.(2025{\natexlab{a}})Wang, Chen, Karaev, Vedaldi, Rupprecht,
+  and Novotny]{vggt}
+Jianyuan Wang, Minghao Chen, Nikita Karaev, Andrea Vedaldi, Christian
+  Rupprecht, and David Novotny.
+\newblock {VGGT: Visual Geometry Grounded Transformer}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 5294--5306, 2025{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2025{\natexlab{b}})Wang, Xu, Dai, Xiang, Deng, Tong, and
+  Yang]{moge}
+Ruicheng Wang, Sicheng Xu, Cassie Dai, Jianfeng Xiang, Yu Deng, Xin Tong, and
+  Jiaolong Yang.
+\newblock {MoGe: Unlocking Accurate Monocular Geometry Estimation for
+  Open-Domain Images with Optimal Training Supervision}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 5261--5271, 2025{\natexlab{b}}.
+
+\bibitem[Wang et~al.(2025{\natexlab{c}})Wang, Xu, Dong, Deng, Xiang, Lv, Sun,
+  Tong, and Yang]{moge2}
+Ruicheng Wang, Sicheng Xu, Yue Dong, Yu Deng, Jianfeng Xiang, Zelong Lv,
+  Guangzhong Sun, Xin Tong, and Jiaolong Yang.
+\newblock {MoGe-2: Accurate Monocular Geometry with Metric Scale and Sharp
+  Details}.
+\newblock \emph{arXiv preprint arXiv:2507.02546}, 2025{\natexlab{c}}.
+
+\bibitem[Wang et~al.(2024)Wang, Leroy, Cabon, Chidlovskii, and Revaud]{dust3r}
+Shuzhe Wang, Vincent Leroy, Yohann Cabon, Boris Chidlovskii, and Jerome Revaud.
+\newblock {DUSt3R: Geometric 3D Vision Made Easy}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 20697--20709, 2024.
+
+\bibitem[Wang et~al.(2025{\natexlab{d}})Wang, Zhou, Zhu, Chang, Zhou, Li, Chen,
+  Pang, Shen, and He]{pi3}
+Yifan Wang, Jianjun Zhou, Haoyi Zhu, Wenzheng Chang, Yang Zhou, Zizun Li, Junyi
+  Chen, Jiangmiao Pang, Chunhua Shen, and Tong He.
+\newblock {$\pi^3$: Permutation-Equivariant Visual Geometry Learning}.
+\newblock \emph{arXiv preprint arXiv:2507.13347}, 2025{\natexlab{d}}.
+
+\bibitem[Xie et~al.(2020)Xie, Wang, Wang, Ding, Shen, and Luo]{trans10k}
+Enze Xie, Wenjia Wang, Wenhai Wang, Mingyu Ding, Chunhua Shen, and Ping Luo.
+\newblock {Segmenting Transparent Objects in the Wild}.
+\newblock In \emph{European Conference on Computer Vision (ECCV)}, 2020.
+
+\bibitem[Yang et~al.(2024{\natexlab{a}})Yang, Kang, Huang, Xu, Feng, and
+  Zhao]{depthanything}
+Lihe Yang, Bingyi Kang, Zilong Huang, Xiaogang Xu, Jiashi Feng, and Hengshuang
+  Zhao.
+\newblock {Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 10371--10381, 2024{\natexlab{a}}.
+
+\bibitem[Yang et~al.(2024{\natexlab{b}})Yang, Kang, Huang, Zhao, Xu, Feng, and
+  Zhao]{dav2}
+Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng, and
+  Hengshuang Zhao.
+\newblock {Depth Anything V2}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2024{\natexlab{b}}.
+
+\bibitem[Yao et~al.(2018)Yao, Luo, Li, Fang, and Quan]{mvsnet}
+Yao Yao, Zixin Luo, Shiwei Li, Tian Fang, and Long Quan.
+\newblock {MVSNet: Depth Inference for Unstructured Multi-view Stereo}.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision
+  (ECCV)}, 2018.
+
+\bibitem[Yu et~al.(2018)Yu, Lin, Yang, Shen, Lu, and Huang]{contextual}
+Jiahui Yu, Zhe Lin, Jimei Yang, Xiaohui Shen, Xin Lu, and Thomas~S. Huang.
+\newblock {Generative Image Inpainting With Contextual Attention}.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2018.
+
+\bibitem[Yu et~al.(2019)Yu, Lin, Yang, Shen, Lu, and Huang]{gatedconv}
+Jiahui Yu, Zhe Lin, Jimei Yang, Xiaohui Shen, Xin Lu, and Thomas~S. Huang.
+\newblock {Free-Form Image Inpainting With Gated Convolution}.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV)}, 2019.
+
+\bibitem[Zhang et~al.(2018)Zhang, Isola, Efros, Shechtman, and Wang]{lpips}
+Richard Zhang, Phillip Isola, Alexei~A. Efros, Eli Shechtman, and Oliver Wang.
+\newblock {The Unreasonable Effectiveness of Deep Features as a Perceptual
+  Metric}.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2018.
+
+\bibitem[Zhao et~al.(2026)Zhao, Gu, and Gao]{ghost}
+Langxu Zhao, Zuan Gu, and Tianhan Gao.
+\newblock {GHOST: Geometry-Guided Hallucination of Opaque Surface Textures}.
+\newblock \emph{arXiv preprint arXiv:2607.11118}, 2026.
+
+\bibitem[Zhou et~al.(2018)Zhou, Tucker, Flynn, Fyffe, and Snavely]{stereomag}
+Tinghui Zhou, Richard Tucker, John Flynn, Graham Fyffe, and Noah Snavely.
+\newblock {Stereo Magnification: Learning View Synthesis using Multiplane
+  Images}.
+\newblock \emph{ACM Transactions on Graphics}, 2018.
+
+\bibitem[Zhu et~al.(2021)Zhu, Mousavian, Xiang, Mazhar, van Eenbergen, Debnath,
+  and Fox]{lidf}
+Luyang Zhu, Arsalan Mousavian, Yu Xiang, Hammad Mazhar, Jozef van Eenbergen,
+  Shoubhik Debnath, and Dieter Fox.
+\newblock {RGB-D Local Implicit Function for Depth Completion of Transparent
+  Objects}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 4649--4658, 2021.
+
+\end{thebibliography}
