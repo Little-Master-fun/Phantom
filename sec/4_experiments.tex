@@ -27,6 +27,7 @@ $\mathcal{F}_{bg}$ receives all views of a synthetic test scene jointly; $\mathc
 \emph{LaMa} feeds the inpainting $P$, which removes the glass together with what is seen through it (background layer only).
 \emph{GHOST}~\cite{ghost} renders the object opaque and yields one layer, so we feed its output to the same backbones and compare on the surface layer.
 \emph{Oracle} feeds the target image ($B^*$, $O^*$, or on ClearGrasp the photograph with the objects painted opaque) and bounds what an image front-end can achieve.
+\Cref{fig:exp-qualitative} compares point clouds from Original, GHOST, and Phantom across four backbones.
 
 \paragraph{Protocol and metrics.}
 Each depth map is scaled by its median ratio to the ground truth over valid pixels outside the ground-truth mask $M$ dilated by 7\,px.
@@ -71,22 +72,17 @@ MoGe-3~\cite{moge3} & \tbpoor{0}{12.19} & \tbgood{100}{\textbf{2.05}} & \tbgood{
 
 \begin{figure*}[t]
 \centering
-% TODO: qualitative figure (to be produced with TransDINO-mask runs).
-% Rows: two Wide views and two ClearGrasp images. Columns: input with TransDINO mask, \hat B, \hat O,
-% background / surface depth error (Original vs Ours, VGGT), layered point cloud (Original vs Ours).
-\fbox{\begin{minipage}[c][3.6cm][c]{0.96\textwidth}\centering\small
-\textcolor{gray}{Qualitative results: input and TransDINO mask, restored background $\hat B$, opaque surface $\hat O$,\\
-depth error of Original and Phantom (VGGT), and the layered point clouds.}
-\end{minipage}}
-\caption{\textbf{Qualitative results} on Wide (top) and ClearGrasp (bottom).
-Depth errors use a shared color scale; point clouds share one camera per row.}
+\includegraphics[pagebox=cropbox,width=\textwidth]{fig/qualitative_comparison.pdf}
+\caption{\textbf{Qualitative point-cloud comparison.}
+Each column group shows two example views for VGGT, $\pi^3$, MoGe-3, or Depth Anything 3.
+From top to bottom, the rows show the original backbone, GHOST, and Phantom with the same backbone.}
 \label{fig:exp-qualitative}
 \end{figure*}
 
 \subsection{Synthetic Layered Scenes}
 \label{sec:exp-synthetic}
 
-\Cref{tab:exp-synthetic} reports both layers on Wide, and \cref{fig:exp-qualitative} shows examples.
+\Cref{tab:exp-synthetic} reports both layers on Wide.
 With the original image, every backbone has 11--22\% AbsRel on the background and 7--24\% on the front surface, because it predicts one depth that mixes the two layers.
 Phantom lowers the surface error on all six backbones, by 41\% (MoGe-3) to 82\% (DA-V2), and the background error to 1.2--4.0\%.
 
