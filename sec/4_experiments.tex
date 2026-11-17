@@ -1,15 +1,14 @@
 \section{Experiments}
 \label{sec:experiments}
 
-% NOTE (2026-11-16): every "Ours" number in this section currently comes from runs that used the
-% ground-truth mask as input. They will be replaced by runs that use the TransDINO mask \hat M.
-% The GHOST numbers on ClearGrasp already use GHOST's own TransDINO masks.
-% NOTE (2026-11-16, encoder): Section 3 now describes a DINOv3 encoder and a multi-view F_bg with cross-view
-% attention. Every "Ours" and ablation number below still comes from the ResNet-50, single-view front-ends
-% (ab26_* runs) and must be replaced. The "w/o DINOv3 features" rows currently hold the "w/o ResNet features"
-% numbers. A "w/o cross-view attention" row is still missing from the ablation table.
-% Sources: outputs/ablation_20261113/{tables,layered/v3w,robustness}, outputs/cleargrasp_ghost_20261116.
+% Data sources: outputs/ablation_20261113/{tables,layered/v3w,robustness}
+% and outputs/cleargrasp_ghost_20261116/summary.json.
 % Split names: Oblique = synth_two_layer_v2, Clutter = v3, Wide = v3w.
+% The current "Ours" and ablation values come from ab26_* runs with
+% ResNet-50 single-view front-ends and ground-truth input masks in the standard evaluations.
+% The "w/o DINOv3 features" rows currently report the ResNet-50 semantic-feature ablations.
+% ClearGrasp's GHOST baseline is ghost_pred, which uses its own TransDINO masks.
+% TODO: replace the provisional values with runs matching Section 3 and add the cross-view ablation.
 
 \subsection{Setup}
 \label{sec:exp-setup}
